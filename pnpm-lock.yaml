@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   astro: ^1.9.0
+  solid-js: ^1.6.8
   tailwindcss: ^3.2.4
 
 dependencies:
   astro: 1.9.1
+  solid-js: 1.6.8
   tailwindcss: 3.2.4
 
 packages:
@@ -980,6 +982,10 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+    dev: false
+
+  /csstype/3.1.1:
+    resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: false
 
   /data-uri-to-buffer/4.0.0:
@@ -3038,6 +3044,12 @@ packages:
   /slash/4.0.0:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
     engines: {node: '>=12'}
+    dev: false
+
+  /solid-js/1.6.8:
+    resolution: {integrity: sha512-+X5rf4bL3Il/LI2pn6O2d63D/KyG8Shxj3DM6violSPOhRgm5ln37Pq6uVDAvJcmsObOBeGOjXAwZvqwyZjisg==}
+    dependencies:
+      csstype: 3.1.1
     dev: false
 
   /source-map-js/1.0.2:
