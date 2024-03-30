@@ -1,23 +1,25 @@
----
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
----
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1 class="text-lg font-bold">Deranged-flavored musings.</h1>
-			<p>
-				Come back later.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kir Peñalber</title>
+</head>
+<body class="bg-[#F8F8F7] h-screen flex justify-center items-center">
+  <div class="max-w-lg w-full mx-8 p-4 text-center">
+    <h1 class="text-3xl font-bold text-[#161416] mb-4">Kir is a Design Engineer and Applied Researcher.</h1>
+    <!-- Achievements
+    <ul class="list-disc text-[#161416] space-y-2 ml-3 text-md">
+      <li>Founding Designer of two SaaS startups at 17.</li>
+	  <li>Mentored by Christian San Jose, Co-Founder and CEO of UX+.</li>
+	  <li>Won 1st Place in a regional science and technology fair for a mobile app.</li>
+	  <li class="font-semibold">Currently:</li>
+      <ul class="list-disc space-y-1 ml-6">
+        <li>Vice President for Events at UX Society.</li>
+		    <li>Researching on social computing, learning sciences, and AI.</li>
+      </ul>
+    </ul>
+    -->
+  </div>
+</body>
 </html>
