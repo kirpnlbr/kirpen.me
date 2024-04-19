@@ -5,6 +5,8 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				inter: ["Inter", "sans-serif"],
+				geist: ["Geist", "sans-serif"],
+				newsreader: ["Newsreader", "serif"],
 			},
 		},
 	},
