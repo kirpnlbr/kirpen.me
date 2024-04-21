@@ -8,7 +8,10 @@ module.exports = {
 				geist: ["Geist", "sans-serif"],
 				newsreader: ["Newsreader", "serif"],
 			},
-		},
+			colors: {
+				'chalice': '#AAAAAA',
+			}
+		}
 	},
 	plugins: [],
 }
