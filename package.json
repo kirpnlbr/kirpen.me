@@ -17,5 +17,9 @@
     "@astrojs/vercel": "^3.4.1",
     "astro": "^2.5.6",
     "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14"
   }
 }

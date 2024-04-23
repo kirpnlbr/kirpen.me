@@ -4,6 +4,6 @@
 
 @layer components {
   .underline-gr {
-    @apply underline decoration-[#606060] decoration-1 underline-offset-[2.5px] hover:decoration-[#A0A0A0] hover:duration-150 ease-in-out;
+    @apply underline decoration-[#606060] decoration-1 underline-offset-[2.5px] ease-in-out hover:decoration-[#A0A0A0] hover:duration-150;
   }
 }
