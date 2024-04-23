@@ -31,9 +31,12 @@ devDependencies:
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
+  prettier-plugin-astro:
+    specifier: ^0.13.0
+    version: 0.13.0
   prettier-plugin-tailwindcss:
     specifier: ^0.5.14
-    version: 0.5.14(prettier@3.2.5)
+    version: 0.5.14(prettier-plugin-astro@0.13.0)(prettier@3.2.5)
 
 packages:
   /@alloc/quick-lru@5.2.0:
@@ -61,6 +64,13 @@ packages:
         integrity: sha512-k04X/7nlMklU0HQUScxbCTf5n8/Vr+0U0bawb9QWulWxd6qJf3FmBrNATgTYiltjB4pc5HBqmmttAfFi7m4lLg==,
       }
     dev: false
+
+  /@astrojs/compiler@1.8.2:
+    resolution:
+      {
+        integrity: sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==,
+      }
+    dev: true
 
   /@astrojs/language-server@1.0.8:
     resolution:
@@ -4555,6 +4565,18 @@ packages:
       which-pm: 2.0.0
     dev: false
 
+  /prettier-plugin-astro@0.13.0:
+    resolution:
+      {
+        integrity: sha512-5HrJNnPmZqTUNoA97zn4gNQv9BgVhv+et03314WpQ9H9N8m2L9OSV798olwmG2YLXPl1iSstlJCR1zB3x5xG4g==,
+      }
+    engines: { node: ^14.15.0 || >=16.0.0 }
+    dependencies:
+      "@astrojs/compiler": 1.8.2
+      prettier: 3.2.5
+      sass-formatter: 0.7.6
+    dev: true
+
   /prettier-plugin-astro@0.9.1:
     resolution:
       {
@@ -4568,7 +4590,7 @@ packages:
       synckit: 0.8.5
     dev: false
 
-  /prettier-plugin-tailwindcss@0.5.14(prettier@3.2.5):
+  /prettier-plugin-tailwindcss@0.5.14(prettier-plugin-astro@0.13.0)(prettier@3.2.5):
     resolution:
       {
         integrity: sha512-Puaz+wPUAhFp8Lo9HuciYKM2Y2XExESjeT+9NQoVFXZsPPnc9VYss2SpxdQ6vbatmt8/4+SN0oe0I1cPDABg9Q==,
@@ -4624,6 +4646,7 @@ packages:
         optional: true
     dependencies:
       prettier: 3.2.5
+      prettier-plugin-astro: 0.13.0
     dev: true
 
   /prettier@2.8.8:
@@ -4970,7 +4993,6 @@ packages:
       {
         integrity: sha512-AUNrbEUHeKY8XsYr/DYpl+qk5+aM+DChopnWOPEzn8YKzOhv4l2zH6LzZms3tOZP3wwdOyc0RmTciyi46HLIuA==,
       }
-    dev: false
 
   /sade@1.8.1:
     resolution:
@@ -4996,7 +5018,6 @@ packages:
       }
     dependencies:
       suf-log: 2.5.3
-    dev: false
 
   /sax@1.2.4:
     resolution:
@@ -5313,7 +5334,6 @@ packages:
       }
     dependencies:
       s.color: 0.0.15
-    dev: false
 
   /supports-color@5.5.0:
     resolution:
