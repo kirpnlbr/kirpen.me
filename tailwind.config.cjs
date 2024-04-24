@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         chalice: "#AAAAAA",
+        electric: "#FDDB2A",
       },
     },
   },
